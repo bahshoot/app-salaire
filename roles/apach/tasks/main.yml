@@ -20,5 +20,5 @@
    enabled: yes
 - name: "Copie du fichier php sur le serveur web"
   copy:
-   src: "create_db.php"
+   src: handlers/
    dest: /var/html/create_db.php
