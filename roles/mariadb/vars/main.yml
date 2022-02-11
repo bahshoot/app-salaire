@@ -1,3 +1,2 @@
 mariadb:
   - mariadb-server
-  - python36-PyMySQL.noarch
