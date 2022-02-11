@@ -1,4 +1,4 @@
-- name: install nginx
+- name: install apach & mariadb
   hosts: client
   roles:
     - prerequis
