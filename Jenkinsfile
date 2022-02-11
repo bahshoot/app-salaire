@@ -5,7 +5,7 @@ node{
     }
     stage('Ansible') {
      ansiblePlaybook (
-      become: mouktar
+      colorized: true, 
       playbook: 'playbook.yml'
       inventory: 'hosts.yml'
      )
