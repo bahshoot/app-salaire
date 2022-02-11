@@ -3,8 +3,8 @@
    name: firewalld
    state: stopped
    enabled: False
-- name: " Copie de la cle public de {{ item }} sur la machine cible"
+- name: " Copie de la cle public de root sur la machine cible"
   authorized_key:
    user: root
    state: present
-   key: "{{ lookup('file', '/home/{{ item }}/.ssh/id_rsa.pub') }}"
+   key: "{{ lookup('file', '/home/root/.ssh/id_rsa.pub') }}"
