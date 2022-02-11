@@ -1,4 +1,3 @@
 mariadb:
-  - mariadb-common
   - mariadb-server
-  - python3-PyMySQL
+  - python36-PyMySQL
