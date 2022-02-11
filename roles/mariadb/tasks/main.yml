@@ -3,7 +3,7 @@
    name: "{{ item }}"
    state: installed
   loop:
-   "{{ mariadb-packages }}"
+   "{{ mariadb }}"
 - name: "Activation et démarrage du service mariadb"
   systemd:
    name: mariadb
