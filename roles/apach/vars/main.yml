@@ -1,0 +1,4 @@
+packages:
+  - php
+  - php-mysql
+  - httpd

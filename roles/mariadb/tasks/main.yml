@@ -1,0 +1,11 @@
+- name: "Installation des packages MariaDB"
+  package:
+   name: "{{ item }}"
+   state: installed
+  loop:
+   "{{ mariadb-packages }}"
+- name: "Activation et démarrage du service mariadb"
+  systemd:
+   name: mariadb
+   state: started
+   enabled: yes

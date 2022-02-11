@@ -1,0 +1,4 @@
+mariadb-packages:
+  - MariaDB-common
+  - MariaDB-server
+  - python3-PyMySQL

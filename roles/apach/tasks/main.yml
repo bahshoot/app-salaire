@@ -1,0 +1,24 @@
+- name: "Installation de Apache et PHP"
+  yum:
+   name: "{{ item }}"
+   state: present
+  loop:
+   "{{ packages }}"
+
+- name: "Creation du dossier html"
+  file:
+   path: /var/www/html
+   state: directory
+   owner: root
+   group: root
+   mode: '0755'
+      
+- name: "Demarrage du service httpd" 
+  service:
+   name: httpd
+   state: started
+   enabled: yes
+- name: "Copie du fichier php sur le serveur web"
+  copy:
+   src: "create_db.php"
+   dest: /var/html/create_db.php
